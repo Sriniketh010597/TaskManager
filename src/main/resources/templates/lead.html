@@ -1,0 +1,343 @@
+<html xmlns:th=http://www.thymeleaf.org>
+
+<head>
+
+ 
+
+<style>
+
+[data-tab-info] {
+
+display: none;
+
+}
+
+.active[data-tab-info] {
+
+display: block;
+
+}
+
+.tab-content {
+
+font-size: 30px;
+
+font-family: sans-serif;
+
+font-weight: bold;
+
+color: #f1f1f1;
+
+}
+
+.tabs {
+
+border:5px solid #ccc;
+
+font-size: 40px;
+
+display: flex;
+
+margin: 0;
+
+}
+
+.tabs span {
+
+background:#f1f1f1;
+
+padding: 6px 10px;
+
+border: 1px solid #ccc;
+
+}
+
+.tabs span:hover {
+
+background: #f1f1f1;
+
+cursor: pointer;
+
+color: black;
+
+}
+
+td, th {
+
+  border: 1px solid #ddd;
+
+  text-align: left;
+
+  padding: 8px;
+
+}
+
+td:nth-child(even), th:nth-child(even) {
+
+  background-color: #f1f1f1;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+ 
+
+<div class="tabs">
+
+        <span data-tab-value="#tab_1">Employee Details</span>
+
+        <span data-tab-value="#tab_2">Assigned Task</span>
+
+        <span data-tab-value="#tab_3">Developers</span>
+
+       
+
+    </div>
+
+ 
+
+    <div class="tab-content">
+
+        <div class="tabs__tab active" id="tab_1" data-tab-info>
+
+            <div class="container">
+
+    <div class="row">
+
+       <div class="col-md-6 offset-md-3">
+
+ 
+
+<table class="table">
+
+  <thead>
+
+    <tr>
+
+      <th scope="col">EmpId</th>
+
+      <td scope="col" th:text="${session.sc.empname}"></td>
+
+    </tr>
+
+    <tr>
+
+      <th scope="col">Level</th>
+
+      <td scope="col" th:text="${session.sc.level}"></td>
+
+    </tr>
+
+  </thead>
+
+
+</table>
+
+  
+
+   </div>
+
+    </div>
+
+            </div>
+
+ 
+
+        </div>
+
+       <div class="tabs__tab" id="tab_2" data-tab-info>
+
+          <div class="container">
+
+    <div class="row">
+
+       <div class="col-md-6 offset-md-3">
+
+<table class="table">
+
+  <thead>
+
+    <tr th:each="taskdescription : ${taskdesc}">
+
+      <th scope="col">Task Description</th>
+
+      <td scope="col" th:text="${taskdescription.taskdesc}"></td>
+
+    </tr>
+
+  </thead>
+
+
+</table>
+
+ 
+
+    
+
+ 
+
+       </div>
+
+    </div>
+
+</div>
+
+ 
+
+        </div>
+
+        <div class="tabs__tab" id="tab_3" data-tab-info>
+
+            <div class="container">
+
+    <div class="row">
+
+       <div class="col-md-6 offset-md-3">
+
+ 
+
+ 
+
+  <table class="table table-dark">
+
+  <thead>
+
+    <tr>
+
+      <th scope="col">Associates Id</th>
+
+    
+
+    </tr>
+
+  </thead>
+
+   <tbody>
+
+    <tr th:each="associate : ${associates}">
+
+            <td><span th:text="${associate.empname}">  </span></td>
+
+           
+
+        </tr>
+
+  </tbody>
+
+</table>
+
+ 
+
+       </div>
+
+       </div>
+
+       </div>
+
+       </div>
+
+       <div class="tabs__tab" id="tab_4" data-tab-info>
+
+          <div class="container">
+
+    <div class="row">
+
+       <div class="col-md-6 offset-md-3">
+
+<table class="table">
+
+  <thead>
+
+    <tr th:each="certificationdescription : ${certdesc}">
+
+      <th scope="col">Certification Description</th>
+
+      <td scope="col" th:text="${certificationdescription.certdesc}"></td>
+
+       <th scope="col">Status</th>
+
+      <td>
+
+  <a href="/progress">progress</a>
+
+    </tr>
+
+  </thead>
+
+
+</table>
+
+ 
+
+    
+
+ 
+
+       </div>
+
+    </div>
+
+</div>
+
+ 
+
+        </div>
+
+        </div>
+        
+        
+        
+        
+        
+        
+        <a href ="#" th:href="@{/logout}">Logout</a>
+       
+
+    <script type="text/javascript">
+
+        const tabs = document.querySelectorAll('[data-tab-value]')
+
+        const tabInfos = document.querySelectorAll('[data-tab-info]')
+
+ 
+
+        tabs.forEach(tab => {
+
+            tab.addEventListener('click', () => {
+
+                const target = document
+
+                    .querySelector(tab.dataset.tabValue);
+
+ 
+
+                tabInfos.forEach(tabInfo => {
+
+                    tabInfo.classList.remove('active')
+
+                })
+
+                target.classList.add('active');
+
+            })
+
+        })
+
+   </script>
+
+    </body>
+
+    </html>
+
+ 
+
+ 
+
+ 
+
+ 
+
