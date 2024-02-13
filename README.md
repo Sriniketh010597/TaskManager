@@ -1,2 +1,6 @@
 # TaskManager
- 
+This project is designed to develop an employee login platform tailored for an organizational setting. The primary goal is to enhance the efficiency and user experience of the portal for personnel across three distinct hierarchical tiers. Specifically, these tiers consist of Developers, Team Leads, and Product Managers. The project has been meticulously structured to achieve greater precision and simplicity in its implementation. We intend to employ Spring Boot as the framework for developing the proposed application. This application will be constructed utilizing the MySQL database. 
+
+PRODUCT CAPABILITIES: 
+
+This product has been developed with a primary focus on simplicity and user-friendliness, catering to organizations and companies across all tiers. The user interface has been meticulously designed for seamless navigation, prioritizing ease of use. Inline JavaScript has been utilized to prevent data transmission and traffic to the portal, while CSS coding enhancements have been implemented to ensure compatibility with inline content. Moreover, a password-protected database system has been deployed to safeguard employee data, thereby upholding the privacy of user and employee information.
