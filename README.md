@@ -1,43 +1,45 @@
 # TASK MANAGER (AN EMPLOYEE LOGIN PORTAL)
 
 ## Introduction and purpose
-This project is designed to develop an employee login platform tailored for an organizational setting. The primary goal is to enhance the efficiency and user experience of the portal for personnel across three distinct hierarchical tiers. Specifically, these tiers consist of Developers, Team Leads, and Product Managers. The project has been meticulously structured to achieve greater precision and simplicity in its implementation. We intend to employ Spring Boot as the framework for developing the proposed application. This application will be constructed utilizing the MySQL database. 
+
+This project endeavors to develop an employee login platform tailored specifically for organizational environments. The primary objective is to elevate the efficiency and user experience of the portal catering to personnel across three distinct hierarchical tiers: Developers, Team Leads, and Product Managers. The project has been meticulously structured to achieve precision and simplicity in its implementation, employing Spring Boot as the framework for application development, and MySQL database for data storage. 
 
 ## Product Capabilities
 
-This product has been developed with a primary focus on simplicity and user-friendliness, catering to organizations and companies across all tiers. The user interface has been meticulously designed for seamless navigation, prioritizing ease of use. Inline JavaScript has been utilized to prevent data transmission and traffic to the portal, while CSS coding enhancements have been implemented to ensure compatibility with inline content. Moreover, a password-protected database system has been deployed to safeguard employee data, thereby upholding the privacy of user and employee information.
+This product prioritizes simplicity and user-friendliness, designed to accommodate organizations across all tiers. The user interface ensures seamless navigation and ease of use. Inline JavaScript mitigates data transmission, while CSS enhancements ensure compatibility with inline content. Furthermore, a password-protected database system safeguards employee data, prioritizing user and employee privacy.
 
 ## Software and Tools used
 
 The primary software and tools essential for the project development encompass:
 
-I. Eclipse IDE version 2022-03:
-Eclipse, a widely used Integrated Development Environment (IDE) for Java programming, served as our development platform. Specifically, we employed Eclipse IDE version 2022-03 for this project.
+I. Eclipse IDE version 2022-03: Eclipse serves as the primary Integrated Development Environment (IDE) for Java programming. Eclipse IDE version 2022-03 was employed for this project.
 
-II. Spring Boot tool:
-The Spring Boot tool facilitates the creation of applications capable of self-running without external web servers.
+II. Spring Boot: This tool facilitates the creation of self-running applications without external web servers.
 
-III. MySQL Workbench 8.0:
-MySQL Workbench 8.0 was utilized for the creation and management of employee databases, storing them within the server infrastructure. We adopted MySQL Workbench version 8.0 for database management in our project.
+III. MySQL Workbench 8.0: Utilized for employee database creation and management, MySQL Workbench 8.0 is integral to our server infrastructure.
 
-The project development was structured into two principal segments:
+The project development comprised two primary segments:
 
-i. Front-end development:
-For the front-end interface, we utilized programming languages such as HTML and CSS.
+i. Front-end Development: HTML and CSS were utilized for the front-end interface.
 
-ii. Back-end development:
-The back-end functionality was implemented using programming languages such as Java and JavaScript.
+ii. Back-end Development: Java and JavaScript were employed for implementing back-end functionality.
 
-As for server deployment, Apache Tomcat was employed. Acting as a web container, Apache Tomcat enables the execution of Java Server Pages (JSP) within web applications, facilitating database creation and management required for storing employee details.
-
+Apache Tomcat was deployed for server deployment, enabling Java Server Pages (JSP) execution within web applications, crucial for database creation and management.
 
 ## Technical Approach
 
-We utilized Eclipse as our primary software development environment. Within Eclipse, we integrated the Spring Boot tool to facilitate the development and execution of code for web applications. For database management, we employed MySQL Workbench 8.0 to create and coordinate databases with the programs we developed in Eclipse.
+Eclipse served as the primary development environment, integrating Spring Boot for web application development. MySQL Workbench 8.0 facilitated database creation and coordination with Eclipse programs.
 
-The project's design adopted an Object-Oriented methodology, meticulously structured to streamline complexity and enhance navigational ease within the portal. Emphasis was placed on crafting a user-friendly system design. Given the substantial employee data stored within the system database, there exists a potential for portal sluggishness during periods of heightened user activity. To preemptively address this concern, Inline JavaScript was employed. Additionally, optimization of CSS by integrating it Inline was imperative. The design implementation adhered to a systematic, step-by-step approach.
+The project design adhered to an Object-Oriented methodology, aimed at streamlining complexity and enhancing navigational ease. To address potential portal sluggishness during peak usage, Inline JavaScript and CSS optimization were employed. The design implementation followed a systematic, step-by-step approach.
 
-At the developer level, the interface would feature a screen transition option labeled "Fetch Employee Details," alongside a tab labeled "Assigned Task." For team lead access, additional tabs included "Developer Level Associates," "Assigned Task" as tab 2, and "Assign Task" as tab 3, concluding with a tab titled "Your Details." For product manager access, tabs would showcase "Developer Level Employees," "Team Lead Employees," a "Task" creation tab, and finally a "Task Summary" tab.
+At the developer level, the interface includes options for "Fetch Employee Details" and "Assigned Task." Team Leads gain access to additional tabs such as "Developer Level Associates," "Assign Task," and "Your Details," while Product Managers access tabs like "Developer Level Employees," "Team Lead Employees," "Task Creation," and "Task Summary." 
+
+
+
+
+
+
+
 
 
 
